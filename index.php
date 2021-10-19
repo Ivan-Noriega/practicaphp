@@ -9,6 +9,7 @@ $imgpath7 = "assets/images/woman-pretty.jpg";
 $imgpath8 = "assets/images/escalator-blue.jpg";
 $imgpath9 = "assets/images/woman-feeling.jpg";
 $imgpath10 = "assets/images/woman-bikini.jpg";
+$vararray = ["Intro", "Features", "Gallery", "Contact"];
 ?>
 
 
@@ -49,11 +50,11 @@ https://www.tooplate.com/view/2116-blugoon
               <span>Free Bootstrap Theme</span>
             </div>
             <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="#section1">Intro</a></li>
-                <li><a href="#section2">Features</a></li>
-                <li><a href="#section3">Gallery</a></li>
-                <li><a href="#section4">Contact</a></li>
+              <ul class="main-menu">              
+                <li><a href="#section1"><?php echo $vararray[0]; ?></a></li>
+                <li><a href="#section2"><?php echo $vararray[1]; ?></a></li>
+                <li><a href="#section3"><?php echo $vararray[2]; ?></a></li>
+                <li><a href="#section4"><?php echo $vararray[3]; ?></a></li>
               </ul>
             </nav>
             <div class="social-network">
@@ -285,7 +286,7 @@ https://www.tooplate.com/view/2116-blugoon
       </section>
 
       <?php 
-        require("contact.php");
+        include("contact.php");
       ?>
 
 

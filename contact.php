@@ -37,7 +37,7 @@
                     <div class="col-md-12">
                       <fieldset>
                         <?php 
-                          include ("button1.php");
+                          require ("button1.php");
                         ?>
                       </fieldset>
                     </div>
